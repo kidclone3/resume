@@ -1,0 +1,223 @@
+%-------------------------
+% Resume in Latex
+% Author : Sidratul Muntaha Ahmed
+% License : MIT
+%------------------------
+% !TEX program = lualatex
+
+\documentclass[letterpaper,11pt]{article}
+% \usepackage{cmbright}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[vietnamese=nohyphenation]{hyphsubst}
+\usepackage[english, vietnamese]{babel}
+\usepackage{tabularx}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}l}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingTwo}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}l}
+      \textbf{#1} & \textbf{#2} & #3 \\
+      \textit{\small#4} & & \textit{\small #5} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}l}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}l}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\setlength{\footskip}{4.08003pt}.
+%----------HEADING----------
+
+
+\begin{center}
+  \textbf{\Huge \scshape Bùi Khánh Duy} \\ \vspace{7pt}
+  \small +84-358-931-746 $|$ \href{mailto:kid21200@gmail.com}{\underline{kid21200@gmail.com}}  \\
+  \href{https://github.com/kidclone3}{\color{blue}\underline{github.com/kidclone3}} $|$ \href{https://www.linkedin.com/in/delus3}{\color{blue}\underline{linkedin.com/in/delus3}}
+  \\\vspace{7pt}
+
+    \textbf{\Large Software Engineer Internship}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Học vấn}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Đại học Khoa học tự nhiên - ĐHQGHN}{\makebox[4cm][l]{Tháng 10/2020 - Hiện tại}}
+      {Hà Nội, Việt Nam}{Dự kiến tốt nghiệp: 6/2024}
+          \resumeItemListStart
+            \resumeItem{\textbf{Ngành:} Khoa học máy tính và thông tin, \textbf{GPA:} 3.3}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Kinh nghiệm}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Hapi Solution}{Tháng 4/2022 – 7/2022}
+      {Software Engineer Internship}{Hà Nội, Việt Nam}
+      \resumeItemListStart
+        \resumeItem{\textbf{Backend:} Viết unittest với Pytest; dùng Python và Flask để xây dựng API cho sản phẩm.}
+        \resumeItem{\textbf{E-Wallet maintaner:} Goopay}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PERSONAL-PROJECT-----------
+\section{Dự án cá nhân}
+  \resumeSubHeadingListStart
+    \resumeSubheadingTwo
+    {Full-stack Developer}{Website bằng PHP}{Tháng 2/2023 – 3/2023}
+    {Từ khoá học trên Youtube}{}
+    \resumeItemListStart
+      \resumeItem{\textbf{Github:} \href{https://github.com/kidclone3/php-mvc-true}{github.com/kidclone3/php-mvc-true}}
+      \resumeItem{\textbf{Mô tả: } Một khoá học nhỏ để tìm hiểu về PHP và MVC.}
+      \resumeItem{\textbf{Tech stack: } PHP, MySQL, HTML and CSS}
+    \resumeItemListEnd
+  
+    \resumeSubheadingTwo
+      {Frontend Developer}{App bán rau củ quả}{Tháng 1/2023 – 2/2023}
+      {Môn Công nghệ Phần mềm}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{Github:} \href{https://github.com/kidclone3/RN-ecommerce-food-app}{github.com/kidclone3/RN-ecommerce-food-app}}
+        \resumeItem{\textbf{Mô tả: } Lần đầu tiên code chính frontend, học về React, React Native và CSS.}
+        \resumeItem{\textbf{Tech stack: } React Native, Strapi (headless CMS)}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Crawl data tools}{\makebox[4cm][l]{Tháng 6/2021 – Hiện tại}}
+      {Sử dụng Python, Selenium, BeautifulSoup and Google APIs}{}
+      % \resumeItemListStart
+      %   \resumeItem{\textbf{Tech stack: } Python, Selenium, BeautifulSoup, Google API...}
+      % \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    
+%-----------COMMUNITY AND LEADERSHIP-----------
+\section{Hoạt động}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {HAMIC - HUS Applied Mathematics and Informatics Club}{Tháng 3/2022 – 5/2023}
+      {CLB Toán tin}{}
+      \resumeItemListStart
+        \resumeItem{Cựu Phó chủ nhiệm}
+        \resumeItem{Cựu Trưởng ban Thuật toán}
+        % \resumeItem{Job description/Award/Achievement 3}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------AWARDS-----------
+\section{Giải thưởng}
+
+    \begin{itemize}
+        \item Giải ba ACM-ICPC vòng miền Bắc \dotfill 2022
+        \item Giải ba Olympic tin học sinh viên \dotfill 2021
+        \item Giải ba ACM-ICPC vòng quốc gia \dotfill 2021
+        \item Giải nhì Olympic tin học sinh viên (không chuyên) \dotfill 2020
+    \end{itemize}
+
+
+%
+%-----------TECHNICAL SKILLS-----------
+\section{Kỹ năng}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+   \makebox[3cm][l]{\textbf{Quen thuộc}}{: C++, Python, MySQL, HTML, CSS} \\
+   \makebox[3cm][l]{\textbf{Cơ bản}}{: C, JS, PHP, React, React Native, Flask, Java, Spring Boot} \\
+   \makebox[3cm][l]{\textbf{Công cụ}}{: Git, VSCode, Neovim, Jetbrain tools} \\
+   \makebox[3cm][l]{\textbf{Hệ thống}}{: Có kinh nghiệm với MacOS, Linux (Ubuntu, Arch) và Docker} \\
+   \makebox[3cm][l]{\textbf{Ngôn ngữ}}{: English (Nghe và Đọc)}\\
+   \makebox[3cm][l]{\textbf{Các môn đã học}}{: DSA, OOP, Operating Systems, Networking, Database}}
+  }
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
